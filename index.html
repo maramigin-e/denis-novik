@@ -15,20 +15,20 @@
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="#">Home</a>
+              <li class="site-list__item ">
+                <a class="site-list__item--active" href="#">Home</a>
               </li>
               <li class="site-list__item">
-                <a href="#about-me">About me</a>
+                <a class="site-list__link" href="#about-me">About me</a>
               </li>
               <li class="site-list__item">
-                <a href="#skills">Skills</a>
+                <a class="site-list__link" href="#skills">Skills</a>
               </li>
               <li class="site-list__item">
-                <a href="#portfolio">Portfolio</a>
+                <a class="site-list__link" href="#portfolio">Portfolio</a>
               </li>
               <li class="site-list__item">
-                <a href="#contacts">Contacts</a>
+                <a class="site-list__link" href="#contacts">Contacts</a>
               </li>
             </ul>
           </div>
@@ -38,36 +38,34 @@
       <section class="home">
         <div class="home-wrapper">
           <ul class="home__list intro-list">
-            <li class="intro-list__item intro-list--name">
-              Denis Novik
+            <li class="intro-list__item">
+              <h2 class="home__header">Denis<br>Novik</h2>
             </li>
             <li class="intro-list__item">
               UX | UI designer<br>24 years old, Minsk
             </li>
-            <li class="intro-list__item">
-              Ru
-            </li>
-            <li class="intro-list__item intro-list__item--active">
-              Eng
+            <li class="intro-list__item intro-list__item--transform">
+              <a class="inactive-link" href="#">Ru</a><a class="intro-list__item--active" href="#"> | Eng</a>
             </li>
           </ul>
         </div>
-        <img src="source//my-photo.jpg" alt="My individual photo">
+        <img class="main-photo" src="source//my-photo.jpg" width="1100px" alt="My individual photo">
       </section>
 
       <section class="about-me" id="about-me">
         <div class="about-me-wrapper">
           <h2 class="about-me__title">About me</h2>
-          <p class="about-me__text">
-            Hi, I'm Denis – UX/UI designer from Minsk. 
-            I'm interested in design and everything connected with it.
+          <div class="about-me__text">
+            <p>Hi, I'm Denis – UX/UI designer from Minsk.</p> 
+            <p>I'm interested in design and everything connected with it.</p>
 
-            I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
+            <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
             
-            Ready to implement excellent projects with wonderful people.
-          </p>
+            <p>Ready to implement excellent projects with wonderful people.</p>
+          </div>
         </div>
-        <div class="skills" id="skills">
+      </section>
+        <section class="skills" id="skills">
           <div class="skills-wrapper">
             <h2 class="skills__title">
               Skills
@@ -77,29 +75,28 @@
           <div class="programms">
             <ul class="programms__list tools-list">
               <li class="tools-list__item">
-                <img src="source/photoshop.png" alt="Adobe Photoshop">
+                <img src="source/photoshop.png" width="90px" alt="Adobe Photoshop">
                 <p class="tools-list__text">Adobe Photoshop</p>
                 <p class="visually-hidden tools-list__rating tools-list__rating--photoshop" title="Rating 4/5">Rating  4/5</p>
               </li>
               <li class="tools-list__item">
-                <img src="source/illustrator.png" alt="Adobe Illustrator">
+                <img src="source/illustrator.png" width="90px" alt="Adobe Illustrator">
                 <p class="tools-list__text">Adobe Illustrator</p>
                 <p class="visually-hidden tools-list__rating tools-list__rating--illustrator" title="Rating 3/5">Rating 3/5</p>
               </li>
               <li class="tools-list__item">
-                <img src="source/after-effects.png" alt="Adobe After Effects">
+                <img src="source/after-effects.png" width="90px" alt="Adobe After Effects">
                 <p class="tools-list__text">Adobe After Effects</p>
                 <p class="visually-hidden tools-list__rating tools-list__rating--after" title="Rating 4/5">Rating 4/5</p>
               </li>
               <li class="tools-list__item">
-                <img src="source/figma.png" alt="Figma">
+                <img src="source/figma.png" width="60px" alt="Figma">
                 <p class="tools-list__text">Figma</p>
                 <p class="visually-hidden tools-list__rating tools-list__rating--figma" title="Rating 4/5">Rating 4/5</p>
               </li>
             </ul>
           </div>
-        </div>
-      </section>
+        </section>
 
       <section class="portfolio" id="portfolio">
         <div class="portfolio-wrapper">

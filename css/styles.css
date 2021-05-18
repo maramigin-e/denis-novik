@@ -37,5 +37,145 @@
 }
 
 body {
+  font-family: "Gilroy-medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+  border: 5px solid blue;
+}
+a:active, a:hover {
+  font-size:20px;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.main-nav {
+  margin: 0 auto;
+}
+
+.main-nav__wrapper {
+  width: 1300px;
+}
+
+.site-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  border-bottom: 1px solid #828282;
+  height: 50px;
+}
+
+.site-list__item {
+  height: 32px;
+  font-size: 18px;
+  font-family: "Gilroy-bold";
+  line-height: 22px;
+  font-weight: 700;
+}
+
+
+.site-list__link {
+  color: #828282;
+}
+
+.site-list__item--active {
+  color: #070707;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.home-wrapper {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.home__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home__header {
+  font-family: "Gilroy-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 57px;
+
+  color: #070707;
+}
+
+.intro-list__item--active {
+  color: #070707;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: "Gilroy-bold", sans-serif;
+}
+
+.intro-list__item--transform {
+  transform: rotate(-90deg);
+}
+
+.inactive-link {
+  color: #828282;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: "Gilroy-bold", sans-serif;
+}
+
+.main-photo {
+  margin: 0 auto;
+}
+
+.about-me {
+  background-color: #f6f6f6;
+  margin-top: 90px;
+  padding-bottom: 50px;
+}
+
+.about-me-wrapper {
+  padding-top: 60px;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.about-me__title {
+  font-family: "Gilroy-bold";
+  font-size: 34px;
+  line-height: 41px;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+.about-me__text {
   font-family: "Gilroy-medium";
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  font-weight: 500;
 }
