@@ -179,3 +179,46 @@ a:active, a:hover {
   text-align: center;
   font-weight: 500;
 }
+
+.skills-wrapper {
+  margin: 0 auto;
+  width: 1300px;
+  text-align: center;
+  padding-top: 45px;
+}
+
+.skills__title {
+  font-family: "Gilroy-bold";
+  font-size: 34px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.skills-text {
+  font-family: "Gilroy-medium";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+
+  padding-top: 35px;
+}
+
+.programms {
+  display: flex;
+}
+
+.tools-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding-top: 40px;
+}
+
+.tools-list__item {
+  width: 314px;
+}
+
+tools-list__rating {
+  text-align: center;
+}
