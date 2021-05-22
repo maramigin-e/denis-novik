@@ -5,7 +5,7 @@
             Блог дизайнера Дениса Новика
         </title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
@@ -17,7 +17,7 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item ">
-                <a class="site-list__item--active" href="#">Home</a>
+                <a class="site-list__link site-list__item--active" href="#">Home</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="#about-me">About me</a>
@@ -30,6 +30,9 @@
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="#contacts">Contacts</a>
+              </li>
+              <li class="site-list__item site-list__item--mobile intro-list__item--transform">
+                <a class="inactive-link" href="#">Ru</a><a class="intro-list__item--active" href="#"> | Eng</a>
               </li>
             </ul>
           </div>
@@ -45,12 +48,16 @@
             <li class="intro-list__item">
               UX | UI designer<br>24 years old, Minsk
             </li>
-            <li class="intro-list__item intro-list__item--transform">
+            <li class="intro-list__item intro-list__item--desktop intro-list__item--transform ">
               <a class="inactive-link" href="#">Ru</a><a class="intro-list__item--active" href="#"> | Eng</a>
             </li>
           </ul>
         </div>
-        <img class="main-photo" src="source//my-photo.jpg" width="1100" alt="My individual photo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="source/my-photo.jpg">
+          <source media="(min-width: 375px) and (max-width: 568px)" srcset="source/my-photo-mobile.jpg">
+          <img src="source/my-photo-mobile.jpg" alt="My individual photo"> 
+        </picture>
       </section>
 
       <section class="about-me" id="about-me">
@@ -108,15 +115,27 @@
           <h2 class="portfolio__header">
             Portfolio
           </h2>
-          <img src="source/fashion-store.png" width="950" alt="Online fashion store">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="source/fashion-store.png">
+            <source media="(min-width: 375px) and (max-width: 568px)" srcset="source/fashion-store-mobile.png">
+            <img class="portfolio__image" src="source/fashion-store.png" width="950" alt="Online fashion store">
+          </picture>
           <p class="portfolio__text">
             <a class="portfolio__links" href="#">Online Fashion store - Homepage</a>
           </p>
-          <img src="source/Reebok.png" width="950" alt="Reebok store - Concept">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="source/Reebok.png">
+            <source media="(min-width: 375px) and (max-width: 568px)" srcset="source/Reebok.png">
+            <img class="portfolio__image" src="source/Reebok.png" width="950" alt="Reebok store - Concept">
+          </picture>
           <p class="portfolio__text">
             <a class="portfolio__links" href="#">Reebok Store - Concept</a>
           </p>
-          <img src="source/braun.png" width="950" alt="Braun Landing Page">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="source/braun.png">
+            <source media="(min-width: 375px) and (max-width: 568px)" srcset="source/braun-mobil.jpg">
+            <img class="portfolio__image" src="source/braun.png" width="950" alt="Braun Landing Page">
+          </picture>
           <p class="portfolio__text">
             <a class="portfolio__links" href="#">Braun Landing Page - Concept</a>
           </p>
@@ -161,5 +180,7 @@
         </div>
       </footer>
 
+
+      <script src="js/toggle.js"></script>
     </body>
 </html>
